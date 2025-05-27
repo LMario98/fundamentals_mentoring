@@ -21,14 +21,12 @@
  - data modeling
 
 
- ## Back-End (Still to decide based on market needs) 
+ ## Back-End 
 
  - Unit and integration tests
  - Database basics 
  - REST API 
 
- ## IMPORTAT - Note
- - Check the acceptance criteria before moving this ticket forward.
  
 
 
