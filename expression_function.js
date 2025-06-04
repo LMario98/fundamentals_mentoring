@@ -1,6 +1,8 @@
-const yearsOfBorn = 1998;
+
 
 const currentAge = function (yearsOfBorn) {
-  return  new Date().getFullYear() - yearsOfBorn;
+  const todayYear = new Date().getFullYear();
+  return  todayYear - yearsOfBorn;
 };
 
+currentAge(1998);
