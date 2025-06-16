@@ -9,4 +9,5 @@ const currentAge = function (yearsOfBorn) {
   return  todayYear - yearsOfBorn;
 };
 console.log(currentAge("1998"));
+
 const foo = currentAge(1998);
