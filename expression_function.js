@@ -15,9 +15,11 @@ function currentAge1(yearsOfBorn1) {
     return '”Thanks for using my application in 2025!!, however can’t give you the age as you need to add a valid number”'
 
   }
-
-  return 'Thanks for using my application in 2025!! your age today is 31'
+  const calculateAge = new Date().getFullYear() - yearsOfBorn1;
+  const getFullYear = new Date().getFullYear();
+  return `Thanks for using my application in ${getFullYear} !! your age today is ${calculateAge}`;
   
   const todayYear = new Date().getFullYear();
   return todayYear - yearsOfBorn1;
 };
+
