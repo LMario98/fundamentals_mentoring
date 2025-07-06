@@ -1,10 +1,10 @@
 
+function calculateCurrentAgeFromBirthYear(birthYear) {
+  if (typeof birthYear !== 'number') {
+    return '”Thanks for using my application in 2025!!, however can’t give you the age as you need to add a valid number”'
 
-const currentAge = function (yearsOfBorn) {
-  if (typeof yearsOfBorn !== 'number') {
-    return "Only numbers are accepted in this function";
   }
-   
-  const todayYear = new Date().getFullYear();
-  return  todayYear - yearsOfBorn;
+  const calculateAge = new Date().getFullYear() - birthYear;
+  const getFullYear = new Date().getFullYear();
+  return `Thanks for using my application in ${getFullYear} !! your age today is ${calculateAge}`;
 };
