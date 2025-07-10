@@ -8,3 +8,13 @@ function calculateCurrentAgeFromBirthYear(birthYear) {
   const getFullYear = new Date().getFullYear();
   return `Thanks for using my application in ${getFullYear} !! your age today is ${calculateAge}`;
 };
+
+
+function getUserDetails(){
+  return  currenAge = {
+  name: "notAvailableName",
+  surname:"NotAvailableSurname",
+  age : calculateCurrentAgeFromBirthYear(1994)
+  }
+
+};
