@@ -1,20 +1,23 @@
 const startButton = document.getElementById('startButton');
-startButton.addEventListener("click", calculateCurrentAgeFromBirthYear);
-const birthYear = "1994";
+startButton.addEventListener("click", getUserDetails);
+
 
 function calculateCurrentAgeFromBirthYear() {
-  if (typeof birthYear !== 'number') {
-    const getBirthYear = prompt('insert a year')
-    return getBirthYear
-  }
+   const getBirthYear = prompt('insert a year')
+  if (typeof getBirthYear !== 'number') {
+     const calculateAge = new Date().getFullYear() - getBirthYear;
+    return calculateAge
+}
 };
 
+
+
 function getUserDetails() {
-  return currenAge = {
+  const obj = currenAge = {
     name: "notAvailableName",
     surname: "NotAvailableSurname",
-    age: calculateCurrentAgeFromBirthYear(1994)
+    age: calculateCurrentAgeFromBirthYear()
   }
-
+  return obj;
 };
 
