@@ -1,20 +1,23 @@
+const startButton = document.getElementById('startButton');
+startButton.addEventListener("click", getUserDetails);
 
-function calculateCurrentAgeFromBirthYear(birthYear) {
-  if (typeof birthYear !== 'number') {
-    return '”Thanks for using my application in 2025!!, however can’t give you the age as you need to add a valid number”'
 
-  }
-  const calculateAge = new Date().getFullYear() - birthYear;
-  const getFullYear = new Date().getFullYear();
-  return `Thanks for using my application in ${getFullYear} !! your age today is ${calculateAge}`;
+function calculateCurrentAgeFromBirthYear() {
+   const getBirthYear = prompt('insert a year')
+  if (typeof getBirthYear !== 'number') {
+     const calculateAge = new Date().getFullYear() - getBirthYear;
+    return calculateAge
+}
 };
 
 
-function getUserDetails(){
-  return  currenAge = {
-  name: "notAvailableName",
-  surname:"NotAvailableSurname",
-  age : calculateCurrentAgeFromBirthYear(1994)
-  }
 
+function getUserDetails() {
+  const obj = currenAge = {
+    name: "notAvailableName",
+    surname: "NotAvailableSurname",
+    age: calculateCurrentAgeFromBirthYear()
+  }
+  return obj;
 };
+
