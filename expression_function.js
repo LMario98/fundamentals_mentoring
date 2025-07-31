@@ -11,13 +11,24 @@ function calculateCurrentAgeFromBirthYear() {
 };
 
 
+function getUserName() {
+const getUserName = prompt('insert your name');
+  return getUserName;
+};
+
+function getUserSurname() {
+const getUserSurname = prompt('insert your surname'); 
+  return getUserSurname;  
+};
 
 function getUserDetails() {
-  const obj = currenAge = {
-    name: "notAvailableName",
-    surname: "NotAvailableSurname",
+  const obj =  {
+    name: getUserName(),
+    surname: getUserSurname(),
     age: calculateCurrentAgeFromBirthYear()
   }
   return obj;
 };
+
+
 
