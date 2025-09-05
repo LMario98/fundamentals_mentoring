@@ -77,10 +77,12 @@ function findLargeNumber() {
   }
    
    const displayLargestNumber = `the largest number is ${result}`;
-    document.getElementById("button").innerHTML = displayLargestNumber
+    document.getElementById("myP").innerText = displayLargestNumber
   return displayLargestNumber
     
 };
 
-console.log(findLargeNumber(priceOfProducts)); 
-document.addEventListener("click", findLargeNumber);
+// console.log(findLargeNumber(priceOfProducts)); 
+
+const button = document.getElementById("button");
+button.addEventListener("click", findLargeNumber)
