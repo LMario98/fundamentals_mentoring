@@ -1,6 +1,3 @@
-// const startButton = document.getElementById('startButton');
-// startButton.addEventListener("click", getUserDetails);
-
 
 function calculateCurrentAgeFromBirthYear() {
    const getBirthYear = prompt('insert a year')
@@ -40,40 +37,40 @@ function getUserDetails() {
 let priceOfProducts = [5, 9, 15];
 
 
-function findLargeNumber() {
+function findLargeNumber(list) {
   
   let result = 0 ;
   
 
   
    
-   if(priceOfProducts[0] > priceOfProducts[2]) {
-    result = priceOfProducts[0];
+   if(list[0] > list[2]) {
+    result = list[0];
    
    }
    
-   if(priceOfProducts[0] > priceOfProducts[1]) {
-    result = priceOfProducts[0];
+   if(list[0] > list[1]) {
+    result = list[0];
     
    }
  
-   if(priceOfProducts[1] > priceOfProducts[0] ){
+   if(list[1] > list[0] ){
     result = priceOfProducts[1];
    
    
    }
-   if(priceOfProducts[1] > priceOfProducts[2]){
-    result = priceOfProducts[1];
+   if(list[1] > list[2]){
+    result = list[1];
    
    }
 
-  if(priceOfProducts[2] > priceOfProducts[0]){
-    result = priceOfProducts[2];
+  if(list[2] > list[0]){
+    result = list[2];
     
   }
  
-  if(priceOfProducts[2] > priceOfProducts[1]){
-    result = priceOfProducts[2];
+  if(list[2] > list[1]){
+    result = list[2];
   }
    
    const displayLargestNumber = `the largest number is ${result}`;
@@ -82,7 +79,8 @@ function findLargeNumber() {
     
 };
 
-// console.log(findLargeNumber(priceOfProducts)); 
 
 const button = document.getElementById("button");
-button.addEventListener("click", findLargeNumber)
+button.addEventListener("click", function() {
+findLargeNumber(priceOfProducts);
+});
