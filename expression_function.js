@@ -1,6 +1,3 @@
-const startButton = document.getElementById('startButton');
-startButton.addEventListener("click", getUserDetails);
-
 
 function calculateCurrentAgeFromBirthYear() {
    const getBirthYear = prompt('insert a year')
@@ -36,3 +33,54 @@ function getUserDetails() {
 
 
 
+
+let priceOfProducts = [5, 9, 15];
+
+
+function findLargeNumber(list) {
+  
+  let result = 0 ;
+  
+
+  
+   
+   if(list[0] > list[2]) {
+    result = list[0];
+   
+   }
+   
+   if(list[0] > list[1]) {
+    result = list[0];
+    
+   }
+ 
+   if(list[1] > list[0] ){
+    result = priceOfProducts[1];
+   
+   
+   }
+   if(list[1] > list[2]){
+    result = list[1];
+   
+   }
+
+  if(list[2] > list[0]){
+    result = list[2];
+    
+  }
+ 
+  if(list[2] > list[1]){
+    result = list[2];
+  }
+   
+   const displayLargestNumber = `the largest number is ${result}`;
+    document.getElementById("myP").innerText = displayLargestNumber
+  return displayLargestNumber
+    
+};
+
+
+const button = document.getElementById("button");
+button.addEventListener("click", function() {
+findLargeNumber(priceOfProducts);
+});
